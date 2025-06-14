@@ -18,6 +18,7 @@ public class ClientServiceImpl implements IClientService {
 
     @Override
     public Iterable<Client> findAll() {
-        return clientDao.findAll();
+        throw new RuntimeException("Fallo simulado: no se pudo acceder a la base de datos H2");
+        //return clientDao.findAll();
     }
 }
